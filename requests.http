@@ -1,0 +1,26 @@
+GET http://localhost:3000/formula1 HTTP/1.1
+
+###
+
+GET http://localhost:3000/formula1/2 HTTP/1.1
+
+###
+POST http://localhost:3000/formula1 HTTP/1.1
+ Content-Type: application/json
+
+{
+  "driver": "Fernando Alonso",
+  "team": "Alpine F1 Team",
+  "races_won": 32
+}
+
+###
+PUT http://localhost:3000/formula1/11 HTTP/1.1
+ Content-Type: application/json
+
+{
+  "races_won": 32
+}
+
+###
+DELETE  http://localhost:3000/formula1/12 HTTP/1.1
